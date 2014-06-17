@@ -2,7 +2,7 @@
 setwd('/your/working/directory/')
 
 ## 1.) let's import and plot these three series 
-my.dat <- read.table('tss.txt', header=TRUE)
+my.dat <- read.table('tss.txt', header=TRUE, sep='\t')
 
 ## 2.) plot these data using base plot
 plot(my.dat[, 1], my.dat[, 2], log='x', ylim=c(23000, 27000))
